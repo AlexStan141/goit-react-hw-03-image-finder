@@ -3,12 +3,10 @@ import css from './Searchbar.module.css';
 import PropTypes from 'prop-types';
 
 export default class Searchbar extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   handleChange = evt => {
     const { name, value } = evt.target;
+	console.log(name);
     this.props.workWithProps(value);
   };
 
